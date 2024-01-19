@@ -1,12 +1,35 @@
 import React from 'react';
 import './App.css';
-import Welcome from './components/Welcome';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Home from './pages/Home';
+import Resume from './pages/Resume';
+import { Component } from 'react';
 
 function App() {
+  //routing without react router
+  switch (window.location.pathname){
+    case "/":
+      Component = Home
+      break
+    case "/Home":
+      Component = Home
+      break
+    case "/About":
+      Component = About
+      break
+    case "/Resume":
+      Component = Resume
+      break
+
+  }
   return (
-    <div className="App">
-      <Welcome></Welcome>
-    </div>
+    <>
+      <Navbar/>
+      <div className='container'>
+        <Component/>
+      </div>
+    </>
   );
 }
 
