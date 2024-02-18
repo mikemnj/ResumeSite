@@ -23,7 +23,7 @@ export default function navbar(){
 
 
 function CustomLink({href,children,...props}) {
-    //path is the current pathname, we will compare this to the 
+    //path is the current pathname, compare this to the 
     //href to see if the href is active, if so set the href to "active"
     //otherwise set it to an empty string
     const path = window.location.pathname
@@ -32,4 +32,4 @@ function CustomLink({href,children,...props}) {
         <a href={href} {...props} > {children}</a>
       </li>
     )
-  }
+}
