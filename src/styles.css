@@ -14,7 +14,7 @@ body{
 nav bar styling
 */
 .nav {
-    background-color:rgb(108, 96, 222);
+    background-color:rgb(100, 92, 180);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -46,10 +46,10 @@ nav bar styling
 }
 
 .nav li:hover{
-    background-color: #777;
+    background-color: rgb(92, 85, 170);
 
 }
 
 .nav li.active {
-background-color: #9e9e9e;
+background-color: rgb(72, 63, 151);
 }
