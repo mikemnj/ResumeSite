@@ -1,3 +1,6 @@
+import React from "react";
+import "./ResumeCard.css";
+
 const ResumeCard = () => {
 
     const resumeInfo = {
@@ -24,40 +27,27 @@ const ResumeCard = () => {
                 position: "Prep Cook/Delivery Driver",
                 company: "Eat at Joe’s",
                 location: "Egg Harbor Township, NJ",
-                startDate: "June 2022",
-                endDate: "September 2023",
-                reference: {
-                    name: "Alberto Pelaez",
-                    role: "Manager",
-                    phone: "(609)-553-3947"
-                }
+                dates: "June 2022 - September 2023",
+                reference: "Alberto Pelaez - Manager - (609)-553-3947"
             },
             {
                 position: "Bar Back/Food Runner",
                 company: "Icona Avalon",
                 location: "Avalon, NJ",
-                startDate: "July 2021",
-                endDate: "August 2022",
-                reference: {
-                    name: "Alyssa Murray",
-                    role: "Manager",
-                    phone: "(267)-563-0664",
-                    email: "amurray@icona.com"
-                }
+                dates: "July 2021 - August 2022",
+                reference: "Alyssa Murray - Manager - (267)-563-0664 - amurray@icona.com"
             },
             {
                 position: "Fry Cook",
                 company: "Dino’s Subs and Pizza",
                 location: "Margate City, NJ",
-                startDate: "July 2020",
-                endDate: "October 2020"
+                dates: "July 2020 - October 2020"
             },
             {
                 position: "Food Runner/Busser",
                 company: "Atlantic City Country Club",
                 location: "Northfield, NJ",
-                startDate: "May 2018",
-                endDate: "June 2020"
+                dates: "May 2018 - June 2020"
             }
         ]
     }
@@ -82,13 +72,11 @@ const ResumeCard = () => {
             <h3>Occupational Experience</h3>
             <div>
                 {resumeInfo.occupationalExperience.map((exp, index) => (
-                    <div key={index}>
+                    <div key={index} className="experience-card">
                         <p><strong>{exp.position}</strong></p>
                         <p>{exp.company}, {exp.location}</p>
-                        <p>{exp.startDate} - {exp.endDate}</p>
-                        {exp.reference && (
-                            <p>Reference: {exp.reference.name} - {exp.reference.role} - {exp.reference.phone} {exp.reference.email && (`- ${exp.reference.email}`)}</p>
-                        )}
+                        <p>{exp.dates}</p>
+                        {exp.reference && <p>Reference: {exp.reference}</p>}
                     </div>
                 ))}
             </div>
