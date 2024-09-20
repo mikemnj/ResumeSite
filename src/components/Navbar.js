@@ -12,9 +12,13 @@ export default function navbar(){
             <li>
                 <CustomLink href = "/About">About</CustomLink>
             </li>
-
+            
             <li>
                 <CustomLink href = "/Resume">Resume</CustomLink>
+            </li>
+
+            <li>
+                <CustomLink href = "/Login">Login</CustomLink>
             </li>
         </ul>
     

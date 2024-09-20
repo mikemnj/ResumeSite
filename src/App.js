@@ -5,6 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
 import { Component } from 'react';
+import Login from './pages/Login';
 
 function App() {
   //routing without react router
@@ -20,6 +21,12 @@ function App() {
       break
     case "/Resume":
       Component = Resume
+      break
+    case "/Login":
+      Component = Login
+      break  
+    default:
+      Component = Home
       break
 
   }

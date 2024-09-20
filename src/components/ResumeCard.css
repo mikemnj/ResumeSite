@@ -3,32 +3,26 @@
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
+    background-color: #f9f9f9;
 }
 
-.contact-section {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
+.contact-section, .summary-section, .education-section, .experience-section {
     margin-bottom: 20px;
 }
 
-.education-section {
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.experience-section {
-    background-color: #d0d0d0;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.experience-card {
-    margin-bottom: 10px;
-    padding: 10px;
+.contact-card, .summary-card, .education-card, .experience-card {
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.contact-card p, .summary-card p, .education-card p, .experience-card p {
+    margin: 0;
+    padding: 0;
 }
